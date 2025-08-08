@@ -1,18 +1,118 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر الإمبراطورية LAVA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>متجر LAVA | بوتات وخدمات</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background: linear-gradient(to left, #ff416c, #ff4b2b);
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #f3f3f3;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .product {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 10px #000;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product h3 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #ff4b2b;
+    }
+
+    .product a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ff4b2b;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .product a:hover {
+      background-color: #e63a1b;
+    }
+
+    footer {
+      background-color: #0a0a0a;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .products {
+        padding: 20px 10px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; background: #111; color: #fff;">
-    <h1>مرحبًا بك في متجر الإمبراطورية 🔥 LAVA</h1>
+<body>
+
+  <header>
+    <h1>🔥 متجر LAVA</h1>
     <p>أقوى بوتات وخدمات الذكاء الاصطناعي</p>
-    <h2>المنتجات</h2>
-    <ul style="list-style: none;">
-        <li>📁 بوت رقم 1 - <a href="#" style="color: yellow;">تحميل</a></li>
-        <li>📁 بوت رقم 2 - <a href="#" style="color: yellow;">تحميل</a></li>
-    </ul>
-    <footer style="margin-top: 50px;">جميع الحقوق محفوظة © LAVA Team</footer>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <h3>📁 بوت رقم 1</h3>
+      <a href="#">تحميل</a>
+    </div>
+
+    <div class="product">
+      <h3>📁 بوت رقم 2</h3>
+      <a href="#">تحميل</a>
+    </div>
+
+    <!-- يمكنك إضافة المزيد من البوتات هنا -->
+  </section>
+
+  <footer>
+    جميع الحقوق محفوظة © LAVA Team — 2025
+  </footer>
+
 </body>
 </html>
